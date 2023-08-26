@@ -1,0 +1,126 @@
+.trading-block {
+  display: flex;
+  justify-content: center;
+  
+
+  .block-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 2rem;
+
+    h1 {
+      text-align: left;
+      max-width: 21.25rem;
+    }
+
+    .image-section {
+      img {
+        left: 0;
+        bottom: 0;
+      }
+    }
+  }
+
+  h1 {
+    text-align: left;
+    max-width: 21.25rem;
+  }
+
+  .image-section {
+    img {
+      width: 100%;
+      bottom: 0;
+    }
+  }
+
+  .block-content {
+    .steps-section {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+
+      .step {
+        width: 34rem;
+        height: 14rem;
+        background: rgba(217, 217, 217, 0.08);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &-content {
+          color: $white;
+          display: flex;
+          padding: 3rem;
+          gap: 2rem;
+
+          .image {
+            width: 5.25rem;
+            height: 5.25rem;
+            margin-top: 4%;
+          }
+
+          .text {
+            display: flex;
+            gap: 1rem;
+            flex-direction: column;
+
+            p {
+              text-align: left;
+              color: $dark-grey;
+              font-size: 1rem; 
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 1440px) {
+    .image-section {
+      img {
+        width: 100%;
+      }
+    }
+
+    .trading-block {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  @media (max-width: 1024px) {
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+    .image-section {
+      img {
+        display: none;
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    .step {
+      width: 8rem;
+      height: 2rem;
+
+      &-content {
+        padding: 2rem;
+
+        .image {
+          width: 3.25rem;
+          height: 3.25rem;
+          margin-top: 2rem;
+        }
+
+        .text {
+          p {
+            text-align: left; /* You can adjust the alignment as needed */
+            font-size: 0.8rem; /* Adjust the font size for smaller screens */
+          }
+        }
+      }
+    }
+  }
+}

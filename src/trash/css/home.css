@@ -1,0 +1,595 @@
+/* Базовые стили */
+.header-container {
+  /* background-image: url("../assets/images/header_bg.png"); */
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.header-h1 {
+  color: white;
+  font-size: 3.875rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  width: 65%;
+}
+
+.header-p {
+  color: rgba(241, 254, 251, 0.7);
+  font-size: 1.2rem;
+  width: 80%;
+  max-width: 600px;
+  margin: 2rem 0;
+}
+
+.header-button {
+  padding: 1rem 3rem;
+  background: #ffd12e;
+  box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.25);
+  color: #09102e;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+.step-container {
+  display: flex;
+  justify-content: center;
+  width: 98%;
+}
+
+.steps-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.steps-text .text {
+  font-size: 2.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  width: 360px;
+  margin: 5rem 10rem 0 0;
+}
+
+.steps-text img {
+  margin-bottom: 8rem;
+  width: 120%;
+}
+
+.steps-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.step {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  background: var(--substrate, rgba(217, 217, 217, 0.08));
+  width: 38rem;
+  height: 14rem;
+}
+
+.step img {
+  width: 5rem;
+  height: 5rem;
+  margin: 3rem;
+}
+
+.step-text {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 380px;
+  width: 100%;
+}
+
+.step .step-text h2 {
+  font-size: 1.75rem;
+}
+
+.step .step-text p {
+  color: #bac0c7;
+}
+
+.blocks {
+  display: flex;
+  flex-wrap: wrap;
+  width: 86%;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.determine-block,
+.cryptocurrency-block {
+  max-width: 40rem;
+  width: 100%;
+  height: 35rem;
+  border-left: 1px solid var(--main-color-white, #fff);
+  background: var(--substrate, rgba(217, 217, 217, 0.08));
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.text-block {
+  margin: 7rem 0 0 5rem;
+}
+
+.text-block h2 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  max-width: 480px;
+  width: 100%;
+  margin-bottom: 3rem;
+}
+
+.text-block p {
+  color: var(--text-color-dark-grey, #bac0c7);
+  max-width: 32rem;
+  width: 100%;
+}
+
+.cryptocurrency-block {
+  position: relative;
+}
+
+.BTC {
+  width: 10rem;
+  height: 10rem;
+  position: absolute;
+  bottom: 2rem;
+  right: 2rem;
+}
+
+.registration-heading {
+  font-size: 3.875rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.registration-heading img {
+  margin-bottom: 1rem;
+}
+
+.registration-blog {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 8rem 0;
+}
+
+.registration-blog p {
+  color: var(--main-color-white, #fff);
+  text-align: center;
+  font-size: 1.375rem;
+  font-weight: 400;
+  width: 800px;
+  max-width: 100%;
+  text-transform: none;
+  margin: 2rem 0 3rem 0;
+}
+
+.instruction-block {
+  width: 80%;
+  padding: 6rem 0;
+  background: var(--substrate, rgba(217, 217, 217, 0.08));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 auto;
+  gap: 4rem;
+}
+
+.instruction {
+  display: flex;
+  justify-content: space-between;
+  gap: 3rem;
+  width: 80%;
+}
+
+.instruction-border {
+  border-left: 1px solid #ffd12e;
+  height: 54%;
+  padding-left: 1rem;
+  font-size: 3.875rem;
+  font-weight: 700;
+  max-width: 28rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.two {
+  height: 45%;
+  max-width: 17rem;
+  width: 100%;
+}
+
+.instruction-description {
+  text-transform: none;
+  font-size: 1.2rem;
+  margin: 3rem 1.2rem;
+  max-width: 33rem;
+  width: 100%;
+}
+
+.instruction-step {
+  font-size: 1.75rem;
+  font-weight: 700;
+  width: 24rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.instruction-step span {
+  color: var(--main-color-yellow, #ffd12e);
+  font-size: 5rem;
+  font-weight: 700;
+}
+
+/* Медиазапросы для адаптивности */
+@media screen and (max-width: 1324px) {
+  .header-h1 {
+    font-size: 2rem;
+    width: 80%;
+  }
+
+  .header-p {
+    font-size: 1rem;
+    width: 80%;
+    margin: 2rem 0;
+  }
+
+  .header-button {
+    padding: 0.8rem 2rem;
+    font-size: 0.9rem;
+  }
+
+  .steps-text img {
+    display: none;
+  }
+
+  .step-container,
+  .steps-text {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .steps-text .text {
+    font-size: 1.8rem;
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+    margin-bottom: 3rem;
+  }
+
+  .blocks {
+    display: flex;
+    width: 70%;
+    margin-top: 4rem;
+  }
+
+  .determine-block,
+  .cryptocurrency-block {
+    max-width: 20rem;
+    width: 100%;
+    height: 15rem;
+  }
+
+  .text-block {
+    margin: 2rem;
+  }
+
+  .text-block h2 {
+    font-size: 1rem;
+    max-width: 480px;
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  .text-block p {
+    max-width: 32rem;
+    width: 100%;
+    font-size: 0.6rem;
+  }
+
+  .determine-block svg {
+    display: none;
+  }
+
+  .cryptocurrency-block img {
+    width: 4rem;
+    height: 4rem;
+    bottom: 1rem;
+    right: 1rem;
+  }
+
+  .registration-heading {
+    font-size: 2.5rem;
+  }
+
+  .registration-heading img {
+    margin: 0 0 0.6rem 0;
+    height: 4.5rem;
+  }
+
+  .registration-blog {
+    margin: 5rem 0;
+  }
+
+  .registration-blog p {
+    font-size: 1rem;
+    width: 600px;
+    max-width: 100%;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .blocks {
+    display: flex;
+    justify-content: center;
+    gap: 9rem;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .steps-text .text {
+    font-size: 1.4rem;
+    width: 80%;
+  }
+
+  .step {
+    width: 24rem;
+    height: 10rem;
+  }
+
+  .step img {
+    width: 4rem;
+    height: 4rem;
+    margin: 1.4rem;
+  }
+
+  .step .step-text h2 {
+    font-size: 1.3rem;
+  }
+
+  .step .step-text p {
+    font-size: 0.8rem;
+    width: 100%;
+    max-width: 220px;
+  }
+
+  .blocks {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .instruction-block {
+    width: 90%;
+    background: var(--substrate, rgba(217, 217, 217, 0.08));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 auto;
+    gap: 4rem;
+  }
+
+  .instruction {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+  }
+
+  .instruction-border {
+    border-left: 1px solid #ffd12e;
+    height: 25%;
+    padding-left: 1rem;
+    font-size: 2rem;
+    font-weight: 700;
+    max-width: 18rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  .two {
+    height: 25%;
+    max-width: 14rem;
+    width: 100%;
+  }
+
+  .instruction-description {
+    text-transform: none;
+    font-size: 1rem;
+    margin: 2rem 1.2rem;
+    max-width: 18rem;
+    width: 100%;
+  }
+
+  .instruction-steps {
+    margin-bottom: 3rem;
+  }
+
+  .instruction-step {
+    font-size: 1.5rem;
+    font-weight: 700;
+    width: 24rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .instruction-step span {
+    font-size: 3rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header-h1 {
+    font-size: 1.6rem;
+    width: 80%;
+  }
+
+  .header-p {
+    font-size: 0.8rem;
+    width: 80%;
+    margin: 2rem 0;
+  }
+
+  .header-button {
+    padding: 0.8rem 2rem;
+    font-size: 0.8rem;
+  }
+
+  .steps-text .text {
+    font-size: 1rem;
+    width: 80%;
+  }
+
+  .step {
+    width: 18rem;
+    height: 8rem;
+  }
+
+  .step img {
+    width: 3rem;
+    height: 3rem;
+    margin: 1.4rem;
+  }
+
+  .step .step-text h2 {
+    font-size: 1rem;
+  }
+
+  .step .step-text p {
+    font-size: 0.6rem;
+    width: 100%;
+    max-width: 160px;
+  }
+
+  .instruction {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .two {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .blocks {
+    gap: 2rem;
+  }
+
+  .text-block {
+    margin: 1.5rem;
+  }
+
+  .text-block h2 {
+    font-size: 1rem;
+    max-width: 480px;
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  .text-block p {
+    max-width: 32rem;
+    width: 100%;
+    font-size: 0.6rem;
+  }
+
+  .registration-heading {
+    font-size: 1.8rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .registration-heading img {
+    margin: 0 0 0.6rem 0;
+    height: 3.8rem;
+  }
+
+  .registration-blog {
+    margin: 5rem 0;
+  }
+
+  .registration-blog p {
+    font-size: 0.8rem;
+    width: 280px;
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .determine-block {
+    height: 17rem;
+  }
+
+  .registration-heading {
+    font-size: 1.6rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .registration-heading img {
+    margin: 0 0 0.6rem 0;
+    height: 3rem;
+  }
+
+  .registration-blog {
+    margin: 5rem 0;
+  }
+
+  .registration-blog p {
+    font-size: 0.8rem;
+    width: 260px;
+    max-width: 100%;
+  }
+
+  .instruction-description {
+    font-size: 1rem;
+    margin: 2rem 1.2rem;
+    max-width: 18rem;
+    width: 100%;
+  }
+
+  .instruction-steps {
+    margin-bottom: 3rem;
+  }
+
+  .instruction-step {
+    font-size: 1.5rem;
+    font-weight: 700;
+    width: 24rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .instruction-step span {
+    font-size: 3rem;
+  }
+}

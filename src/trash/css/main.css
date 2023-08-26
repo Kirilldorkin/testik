@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(
+    91deg,
+    #060b1f 0%,
+    #080f2e 40.81%,
+    #080f2d 65.3%,
+    #070e27 100%
+  );
+  font-family: Raleway;
+}
+
+
+
+div,
+p {
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.active {
+  cursor: pointer;
+}
+
+@import url(./navbar.css);
+@import url(./footer.css);
+@import url(./home.css);
+@import url(./preloader.css);

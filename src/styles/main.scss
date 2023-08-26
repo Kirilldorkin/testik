@@ -1,0 +1,29 @@
+@import "./global";
+
+@import "./abstracts/mixins";
+@import "./abstracts/variables";
+
+@import "./base/reset";
+@import "./base/typography";
+
+@import "./components/button";
+@import "./components/burger-menu";
+@import "./components/hero-section";
+@import "./components/trading-block";
+@import "./components/cards-block";
+@import "./components/invitation-block";
+@import "./components/info-block";
+@import "./components/page-banner";
+@import "./components/accordion";
+
+@import "./layout/footer";
+@import "./layout/header";
+
+@import "./pages/main";
+@import "./pages/about-us";
+@import "./pages/contact-us";
+@import "./pages/client-agreement";
+@import "./pages/privacy-policy";
+@import "./pages/how-to-trade";
+@import "./pages/news";
+

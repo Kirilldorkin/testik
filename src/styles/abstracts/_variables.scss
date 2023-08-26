@@ -1,0 +1,72 @@
+//-------- Color variables --------//
+
+$background: #070d2d;
+$tooltip-background: #1a233e;
+
+// Main colors
+$blue: #070d2d;
+$yellow: #ffd12e;
+$black: #3a3d3c;
+$white: #ffffff;
+
+// Secondary colors
+$violet: #5570f1;
+$light-green: #5ed5a8;
+$dark-grey: #bac0c7;
+
+// State colors
+$info: #2f80ed;
+$success: #27ae60;
+$error: #eb5757;
+$disabled: #caa217;
+
+//-------- Font variables --------//
+
+// Font Family
+$primary-font: Raleway, sans-serif;
+$secondary-font: Inter, sans-serif;
+
+// Font Size
+$default-fz: 1rem;
+$medium-fz: 1.5rem;
+$capital: 1.25rem;
+$small: 1.125rem;
+$h1: 3.875rem;
+$h2: 2.125rem;
+$h3: 1.75rem;
+$p: 1.375rem; //semi-bold too
+$number: 1.25rem;
+
+// Font Weight
+$regular: 400;
+$medium: 600;
+$bold: 700;
+
+//-------- Components variables --------//
+
+// Input colors
+$default-input: #f6f7fb;
+$focus-input: #ebeef8;
+$error-input: #fdf7f6;
+
+// Border
+$border: 1px solid $white;
+$active-border: 1px solid $yellow;
+$none: none;
+
+// Box Shadow
+$box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.25);
+
+// Transition
+$border-transition: border 0.3s;
+$color-transition: color 0.3s;
+$background-transition: background-color 0.3s ease-in-out;
+$burger-transform-transition: transform 0.5s ease-in-out;
+$transform-transition: transform 0.3s;
+$opacity-transition: opacity 0.3s;
+
+// Z-index
+$burger-menu-z-index: 1000;
+
+// Blur
+$blur: blur(0.125rem);

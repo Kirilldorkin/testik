@@ -1,15 +1,18 @@
-import StepPhoto from "../assets/images/step.png";
-import DepositPhoto from "../assets/svg/Deposit.svg"
-import PositionPhoto from "../assets/svg/Position.svg";
-import ProfitPhoto from "../assets/svg/Profit.svg";
+import StepPhoto from "../assets/images/trading-block.png";
+import DepositPhoto from "../assets/svg/Trading-block/deposit.svg";
+import PositionPhoto from "../assets/svg/Trading-block/position.svg";
+import ProfitPhoto from "../assets/svg/Trading-block/profit.svg";
 import { useTranslation } from "react-i18next";
 
 const StepContainer = () => {
   const { t } = useTranslation();
   return (
     <div className="step-container">
-      <div className="step-text">
-        <h2>Start trading with us in 3 steps</h2>
+      <div className="steps-text">
+        <div className="text">
+          <h2>Start trading with us in 3 steps</h2>
+        </div>
+
         <img src={StepPhoto} alt="Steps photo" />
       </div>
 

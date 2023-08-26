@@ -1,0 +1,53 @@
+h1 {
+  font-size: $h1;
+  font-weight: $bold;
+}
+
+h2 {
+  font-size: $h2;
+  font-weight: $bold;
+}
+
+h3 {
+  font-size: $h3;
+  font-weight: $bold;
+}
+
+.medium-text {
+  font-size: $medium-fz;
+  font-weight: $bold;
+}
+
+p {
+  font-size: $p;
+  font-weight: $regular;
+}
+
+.semi-bold-text {
+  font-size: $p;
+  font-weight: $medium;
+}
+
+.small-text {
+  font-size: $small;
+  font-weight: $regular;
+}
+
+.capital-text {
+  font-size: $capital;
+  font-weight: $regular;
+}
+
+.number {
+  font-family: $secondary-font;
+  font-size: $number;
+  font-weight: $regular;
+}
+
+h1,
+h2,
+h3,
+button,
+.capital-text {
+  text-transform: uppercase;
+}

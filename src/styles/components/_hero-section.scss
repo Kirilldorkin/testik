@@ -1,0 +1,45 @@
+.hero-section {
+  @include background("../../assets/images/hero-section-bg.png", 100vh);
+  gap: 2rem;
+  
+
+  h1 {
+    width: 72%;
+  }
+
+  p {
+    width: 28%;
+    color: rgba(241, 254, 251, 0.7);
+  }
+
+  @media (max-width: 1024px) {
+    h1 {
+      width: 92%;
+    }
+
+    p {
+      width: 56%;
+    }
+  }
+
+  @media (max-width: 768px) {
+    h1 {
+      font-size: $h2;
+    }
+
+    p {
+      font-size: $capital;
+    }
+  }
+
+  @media (max-width: 425px) {
+    h1 {
+      font-size: $h3;
+    }
+
+    p {
+      width: 82%;
+      font-size: $default-fz;
+    }
+  }
+}

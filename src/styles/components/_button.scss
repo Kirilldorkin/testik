@@ -1,0 +1,61 @@
+.custom-button {
+  &.primary {
+    @include button(
+      $border,
+      $box-shadow,
+      $white,
+      0.75rem 2rem,
+      transparent,
+      ($border-transition, $color-transition)
+    );
+
+    &:hover {
+      border: $active-border;
+      color: $yellow;
+    }
+  }
+
+  &.secondary {
+    @include button(
+      $none,
+      $box-shadow,
+      $blue,
+      1rem 3.75rem,
+      $yellow,
+      ($background-transition, $color-transition)
+    );
+
+    &:hover {
+      color: $white;
+    }
+
+    &.clicked {
+      color: $blue;
+      background: $disabled;
+    }
+  }
+
+  &.tertiary {
+    @include button(
+      $none,
+      $box-shadow,
+      $blue,
+      1rem 50%,
+      $yellow,
+      ($background-transition, $color-transition)
+    );
+
+    @media (max-width: 425px) {
+      padding: 1rem 6.5rem;
+    }
+
+    &:hover {
+      color: $white;
+    }
+
+    &.clicked {
+      color: $blue;
+      background: $disabled;
+    }
+  }
+}

@@ -1,0 +1,22 @@
+.news-page {
+  .text-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    p {
+      text-align: left;
+      cursor: pointer;
+
+      span {
+        text-decoration-line: underline;
+      }
+
+      @media (max-width: 425px) {
+        font-size: 1rem;
+    }
+    }
+
+    
+  }
+}

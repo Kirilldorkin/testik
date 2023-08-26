@@ -1,0 +1,21 @@
+.cards-block {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5rem;
+
+    .card {
+        flex: 1;
+        border-left: 1px solid $white;
+        background-color: rgba(217, 217, 217, 0.08);
+        padding: 2rem;
+        position: relative;
+        min-height: 18rem;
+        max-width: 30rem;
+        min-width: 20rem;
+
+        &-title {
+            color: $white;
+        }
+    }
+}

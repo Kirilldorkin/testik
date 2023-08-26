@@ -1,0 +1,30 @@
+@mixin background($image-url, $height) {
+  background-image: url(#{$image-url});
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: $height;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+@mixin button(
+  $border,
+  $box-shadow,
+  $color,
+  $padding,
+  $background-color,
+  $transition
+) {
+  border: $border;
+  box-shadow: $box-shadow;
+  color: $color;
+
+  padding: $padding;
+  background-color: $background-color;
+  transition: $transition;
+}

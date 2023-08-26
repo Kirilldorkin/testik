@@ -1,0 +1,36 @@
+.about-page {
+  .text-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2.8rem;
+    color: $white;
+
+    h1,
+    p {
+      text-align: left;
+      text-transform: none;
+      line-height: 1.75rem;
+    }
+
+    .indented-list {
+      padding-left: 1rem;
+      li {
+        font-size: $p;
+        line-height: 1.75rem;
+      }
+    }
+
+    @media (max-width: 425px) {
+      h1, p {
+        font-size: 1rem;
+      }
+
+      .indented-list {
+        padding-left: 1rem;
+        li {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+}

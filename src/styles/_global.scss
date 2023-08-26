@@ -1,0 +1,28 @@
+@import "./abstracts/variables";
+
+body {
+  background: $background;
+  font-family: $primary-font;
+}
+
+.container{ 
+  padding: 10vh 10vw;
+  display: flex;
+  flex-direction: column;
+  gap: 20vh;
+}
+
+button,
+span,
+a {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1, p {
+  text-align: center;
+  color: $white;
+}

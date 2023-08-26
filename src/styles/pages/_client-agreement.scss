@@ -1,0 +1,62 @@
+.agreement-page {
+  .text-container {
+    display: flex;
+    flex-direction: column;
+    gap: 8rem;
+    line-height: 2.1875rem;
+    color: $white;
+
+    @media (max-width: 425px) {
+      h3 {
+        font-size: 1.25rem;
+      }
+    }
+
+    p {
+      text-align: left;
+      cursor: pointer;
+
+      span {
+        text-decoration-line: underline;
+      }
+
+      @media (max-width: 425px) {
+        font-size: 1rem;
+      }
+    }
+
+    .accordion-item {
+      .accordion-content {
+        margin-top: 2rem;
+      }
+    }
+
+    table {
+      border-collapse: collapse;
+      border-top: 1px solid rgba(255, 255, 255, 0.4);
+      width: 100%;
+      font-size: $p;
+    }
+
+    td {
+      border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+      padding: 1rem;
+      text-align: left;
+
+      @media (max-width: 425px) {
+        font-size: 1rem;
+      }
+    }
+
+    td:nth-child(1) {
+      width: 30%;
+      vertical-align: top;
+      font-weight: $medium;
+      margin-right: 2rem;
+    }
+
+    td:nth-child(2) {
+      width: 70%;
+    }
+  }
+}

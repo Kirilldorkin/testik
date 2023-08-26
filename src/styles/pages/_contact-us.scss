@@ -1,0 +1,82 @@
+.contact-page {
+  .text-container {
+    color: $white;
+
+    h2 {
+      text-align: center;
+
+      @media (max-width: 425px) {
+        font-size: 1.25rem;
+      }
+    }
+
+    .networks {
+      display: flex;
+      justify-content: space-between;
+      margin: 8rem 0;
+      .phone,
+      .email,
+      .social,
+      .social-icons {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+      }
+
+      .phone {
+        p {
+          width: 185px;
+
+          @media (max-width: 425px) {
+            width: 135px;
+          }
+        }
+      }
+
+      @media (max-width: 1024px) {
+        flex-direction: column;
+        gap: 3rem;
+      }
+
+      @media (max-width: 425px) {
+        p {
+          font-size: 1rem;
+        }
+
+        svg,
+        img {
+          width: 2rem;
+          height: 2rem;
+        }
+      }
+    }
+
+    .contact-form {
+      max-width: 90%;
+      margin: 0 auto;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+
+    .form-input,
+    .form-textarea {
+      width: 100%;
+      padding: 10px;
+      background-color: #EFF1F9;
+      border: none;
+      font-size: 14px;
+    }
+
+    .form-input:focus,
+    .form-textarea:focus {
+      outline: none;
+      box-shadow: none;
+    }
+
+    .btn {
+      margin: 0 auto;
+    }
+  }
+}

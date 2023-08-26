@@ -1,0 +1,16 @@
+.policy-page {
+  .text-container {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    line-height: 2.1875rem;
+
+    p {
+      text-align: left;
+
+      @media (max-width: 425px) {
+        font-size: 1rem;
+      }
+    }
+  }
+}
