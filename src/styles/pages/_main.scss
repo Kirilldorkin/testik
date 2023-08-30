@@ -1,74 +1,31 @@
-/* Базовые стили */
-.header-container {
-  background-image: url("../../assets/images/hero-section-bg.png");
-  background-size: cover;
-  background-position: center;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  margin-bottom: 4rem;
-}
-
-.header-h1 {
-  color: white;
-  font-size: 3.875rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  width: 65%;
-}
-
-.header-p {
-  color: rgba(241, 254, 251, 0.7);
-  font-size: 1.2rem;
-  width: 80%;
-  max-width: 600px;
-  margin: 2rem 0;
-}
-
-.header-button {
-  padding: 1rem 3rem;
-  background: #ffd12e;
-  box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.25);
-  color: #09102e;
-  border: none;
-  cursor: pointer;
-  font-size: 1rem;
-  text-transform: uppercase;
-}
-
 .step-container {
   display: flex;
   justify-content: center;
   width: 98%;
   margin-bottom: 5rem;
-}
-
-.steps-text {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: flex-end;
+  position: relative;
+  p {
+    text-align: left;
+  }
 }
 
 .steps-text .text {
   font-size: 2.7rem;
   font-weight: 700;
   text-transform: uppercase;
-  width: 360px;
+  max-width: 360px;
   margin: 5rem 10rem 0 0;
+  margin-left: 50%;
 }
 
-.steps-text img {
-  margin-bottom: 8rem;
-  width: 120%;
+.steps-text .img {
+  margin-top: 2rem;
 }
 
 .steps-container {
   display: flex;
   flex-direction: column;
+  position: relative;
   gap: 2rem;
 }
 
@@ -76,7 +33,7 @@
   display: flex;
   align-items: center;
   justify-content: start;
-  background: var(--substrate, rgba(217, 217, 217, 0.08));
+  background: rgba(217, 217, 217, 0.08);
   width: 38rem;
   height: 14rem;
 }
@@ -106,9 +63,11 @@
 .blocks {
   display: flex;
   flex-wrap: wrap;
-  width: 86%;
   justify-content: space-between;
   margin: 0 auto;
+  p {
+    text-align: left;
+  }
 }
 
 .determine-block,
@@ -121,6 +80,22 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  position: relative;
+}
+
+.lighting-effect {
+  position: absolute;
+  top: 50%; /* Adjust the position */
+  left: 50%; /* Adjust the position */
+  width: 170px; /* Adjust the size */
+  height: 100px; /* Adjust the size */
+  background: radial-gradient(
+    ellipse at center,
+    rgba(255, 255, 255, 0.5) 0%,
+    rgba(255, 255, 255, 0) 70%
+  );
+  transform: translate(-50%, -50%);
+  pointer-events: none;
 }
 
 .text-block {
@@ -202,7 +177,28 @@
   justify-content: space-between;
   gap: 3rem;
   width: 80%;
-  
+  position: relative;
+}
+
+.image-container {
+  position: relative;
+  display: inline-block;
+}
+
+.crypto {
+  max-width: 100%;
+  height: auto;
+}
+
+.text-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
 }
 
 .instruction-border {
@@ -215,12 +211,6 @@
   width: 100%;
   display: flex;
   align-items: center;
-}
-
-.two {
-  height: 45%;
-  max-width: 17rem;
-  width: 100%;
 }
 
 .instruction-description {
@@ -240,6 +230,10 @@
   align-items: center;
   gap: 1rem;
 
+  p {
+    text-align: left;
+  }
+
   @media (max-width: 425px) {
     font-size: 1.125rem;
     width: 100px;
@@ -256,24 +250,20 @@
   }
 }
 
+.invisible-ellipse {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  background: rgba(26, 243, 191, 0.1);
+  filter: blur(200px);
+  width: 80%;
+  height: 100%;
+  z-index: -1;
+}
+
 /* Медиазапросы для адаптивности */
 @media screen and (max-width: 1324px) {
-  .header-h1 {
-    font-size: 2rem;
-    width: 80%;
-  }
-
-  .header-p {
-    font-size: 1rem;
-    width: 80%;
-    margin: 2rem 0;
-  }
-
-  .header-button {
-    padding: 0.8rem 2rem;
-    font-size: 0.9rem;
-  }
-
   .steps-text img {
     display: none;
   }
@@ -357,7 +347,19 @@
   .blocks {
     display: flex;
     justify-content: center;
+    margin: 0 auto;
+    width: 100%;
     gap: 9rem;
+  }
+
+  .steps-text .text {
+    max-width: 360px;
+    margin: 5rem 10rem 0 0;
+    margin-left: 50%;
+  }
+
+  .steps-text .img {
+    margin-top: 12rem;
   }
 }
 
@@ -388,6 +390,10 @@
     max-width: 220px;
   }
 
+  .steps-text {
+    position: relative;
+  }
+
   .blocks {
     display: flex;
     justify-content: center;
@@ -398,7 +404,7 @@
 @media screen and (max-width: 1024px) {
   .instruction-block {
     width: 90%;
-    background: var(--substrate, rgba(217, 217, 217, 0.08));
+    background: rgba(217, 217, 217, 0.08);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -424,12 +430,6 @@
     width: 100%;
     display: flex;
     align-items: center;
-  }
-
-  .two {
-    height: 25%;
-    max-width: 14rem;
-    width: 100%;
   }
 
   .instruction-description {
@@ -459,22 +459,6 @@
 }
 
 @media screen and (max-width: 768px) {
-  .header-h1 {
-    font-size: 1.6rem;
-    width: 80%;
-  }
-
-  .header-p {
-    font-size: 0.8rem;
-    width: 80%;
-    margin: 2rem 0;
-  }
-
-  .header-button {
-    padding: 0.8rem 2rem;
-    font-size: 0.8rem;
-  }
-
   .steps-text .text {
     font-size: 1rem;
     width: 80%;
@@ -506,7 +490,7 @@
     flex-direction: column;
   }
 
-  .two {
+  .reverse {
     display: flex;
     flex-direction: column-reverse;
   }
@@ -556,7 +540,7 @@
   }
 }
 
-@media screen and (max-width: 375px) {
+@media (max-width: 375px) {
   .determine-block {
     height: 17rem;
   }
@@ -603,10 +587,9 @@
     width: 12rem;
 
     p {
-        font-size: 1.125rem;
-        text-align: left;
+      font-size: 1.125rem;
+      text-align: left;
     }
-
   }
 
   .instruction-step span {

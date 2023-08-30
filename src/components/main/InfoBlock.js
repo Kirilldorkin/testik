@@ -1,4 +1,7 @@
-import Image from "../../assets/images/image.png";
+// import Image from "../../assets/images/image.png";
+import Crypto01 from "../../assets/images/Crypto-01.png";
+import Crypto02 from "../../assets/images/Crypto-02.png";
+
 import Button from "../Button";
 
 const InfoBlock = () => {
@@ -38,7 +41,7 @@ const InfoBlock = () => {
           </div>
         </div>
         <div className="block-section-image">
-          <img src={Image} alt="Photo 1" className="section-photo" />
+          <img src={Crypto01} alt="Photo 1" className="section-photo" />
         </div>
       </div>
       <div className="block-section reverse">
@@ -52,7 +55,7 @@ const InfoBlock = () => {
           </div>
         </div>
         <div className="block-section-image">
-          <img src={Image} alt="Photo 1" className="section-photo" />
+          <img src={Crypto02} alt="Photo 1" className="section-photo" />
         </div>
       </div>
       <div>

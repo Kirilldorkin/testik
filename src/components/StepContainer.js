@@ -13,10 +13,13 @@ const StepContainer = () => {
           <h2>Start trading with us in 3 steps</h2>
         </div>
 
-        <img src={StepPhoto} alt="Steps photo" />
+        <div className="img">
+          <img src={StepPhoto} alt="Steps photo" />
+        </div>
       </div>
 
       <div className="steps-container">
+        <div className="invisible-ellipse"></div>
         <div className="step">
           <img src={DepositPhoto} alt="deposit" />
           <div className="step-text">

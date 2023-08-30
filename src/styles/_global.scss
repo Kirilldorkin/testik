@@ -5,11 +5,18 @@ body {
   font-family: $primary-font;
 }
 
-.container{ 
-  padding: 10vh 10vw;
+.container {
+  max-width: 1368px;
+  width: 90%;
+  margin: 0 auto;
+  padding: 5rem 0;
   display: flex;
   flex-direction: column;
   gap: 20vh;
+
+  @media screen and (min-width: 1440px) {
+    max-width: 1668px;
+  }
 }
 
 button,
@@ -22,7 +29,9 @@ a {
   text-decoration: none;
 }
 
-h1, p {
+h1,
+p {
   text-align: center;
   color: $white;
 }
+

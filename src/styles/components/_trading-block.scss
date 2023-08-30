@@ -1,40 +1,21 @@
 .trading-block {
   display: flex;
   justify-content: center;
-  
 
   .block-content {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    gap: 2rem;
-
+    position: relative;
     h1 {
       text-align: left;
+      position: absolute;
       max-width: 21.25rem;
+      right: 0;
     }
-
+    
     .image-section {
       img {
-        left: 0;
-        bottom: 0;
       }
     }
-  }
 
-  h1 {
-    text-align: left;
-    max-width: 21.25rem;
-  }
-
-  .image-section {
-    img {
-      width: 100%;
-      bottom: 0;
-    }
-  }
-
-  .block-content {
     .steps-section {
       display: flex;
       flex-direction: column;
@@ -57,7 +38,9 @@
           .image {
             width: 5.25rem;
             height: 5.25rem;
-            margin-top: 4%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
           }
 
           .text {
@@ -68,7 +51,7 @@
             p {
               text-align: left;
               color: $dark-grey;
-              font-size: 1rem; 
+              font-size: 1rem;
             }
           }
         }
@@ -111,13 +94,12 @@
         .image {
           width: 3.25rem;
           height: 3.25rem;
-          margin-top: 2rem;
         }
 
         .text {
           p {
-            text-align: left; /* You can adjust the alignment as needed */
-            font-size: 0.8rem; /* Adjust the font size for smaller screens */
+            text-align: left;
+            font-size: 0.8rem;
           }
         }
       }
