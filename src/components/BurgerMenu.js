@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
+import Mobile from "./popups/Mobile";
 
 const BurgerMenu = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -10,6 +11,7 @@ const BurgerMenu = () => {
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
+
 
   return (
     <div className={`burger-menu ${isOpen ? "open" : ""}`}>

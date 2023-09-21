@@ -43,10 +43,12 @@ import Crypto02 from "../assets/images/Crypto-02.png";
 import { useState } from "react";
 import Button from "../components/Button";
 
+
 const Main = () => {
   const handleButtonClick = () => {
     alert("Button clicked!");
   };
+  
   return (
     <div style={{ color: "white" }}>
       <HeroSection
@@ -63,11 +65,9 @@ const Main = () => {
         <StepContainer />
         <div className="blocks">
           <div className="determine-block">
-
             <div className="text-block">
+              <div class="invisible-ellipse"></div>
 
-            <div class="invisible-ellipse"></div>
-              
               <h2>Determine where the price will go — up or down</h2>
 
               <p>
@@ -79,7 +79,6 @@ const Main = () => {
                 <br /> <br />
                 Correct prediction will bring you profit!
               </p>
-
             </div>
 
             <svg
@@ -111,7 +110,7 @@ const Main = () => {
 
           <div className="cryptocurrency-block">
             <div className="text-block">
-            <div class="invisible-ellipse"></div>
+              <div class="invisible-ellipse"></div>
               <h2>Cryptocurrency</h2>
 
               <p>
@@ -159,7 +158,7 @@ const Main = () => {
             </div>
 
             <div className="instruction-steps">
-            <div class="invisible-ellipse"></div>
+              <div class="invisible-ellipse"></div>
               <div className="instruction-step">
                 <span>1</span> <p>Apply now</p>
               </div>
@@ -176,7 +175,6 @@ const Main = () => {
 
           <div className="instruction">
             <div className="instruction-text">
-              
               <h2 className="instruction-border">WHO ARE AGENTS</h2>
               <p className="instruction-description">
                 An agent is a person who looks for players, helps them with
